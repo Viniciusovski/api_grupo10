@@ -8,6 +8,7 @@ import desafiogenerations.service.FuncionarioService;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,7 +25,8 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService funcionarioService;
 
-
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @GetMapping("/listar")
     public List<Funcionario> findAll(){
@@ -44,10 +46,14 @@ public class FuncionarioController {
     public ResponseEntity<FuncionarioCreateResponse> createFuncionario(@RequestBody FuncionarioRequestPayload payload){
         Funcionario newFuncionario = new Funcionario(payload);
 
-        try{
+        // Codifica a senha antes de salvar o funcionário
+        String encodedPassword = passwordEncoder.encode(payload.senha());
+        newFuncionario.setSenha(encodedPassword);
+
+        try {
             this.repository.save(newFuncionario);
             return ResponseEntity.ok(new FuncionarioCreateResponse(newFuncionario.getId_funcionario()));
-        } catch (Exception e){
+        } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
     }
