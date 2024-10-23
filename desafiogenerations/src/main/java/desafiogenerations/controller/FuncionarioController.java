@@ -5,7 +5,6 @@ import desafiogenerations.payload.FuncionarioCreateResponse;
 import desafiogenerations.payload.FuncionarioRequestPayload;
 import desafiogenerations.repository.FuncionarioRepository;
 import desafiogenerations.service.FuncionarioService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/funcionarios")
@@ -66,7 +64,7 @@ public class FuncionarioController {
             Funcionario editadoFuncionario = funcionario.get();
 
             editadoFuncionario.setNome_funcionario(payload.nome());
-            editadoFuncionario.setEmail_funcionario(payload.email());
+            editadoFuncionario.setEmail(payload.email());
             editadoFuncionario.setSenha(payload.senha());
             editadoFuncionario.setCargo(payload.cargo());
 

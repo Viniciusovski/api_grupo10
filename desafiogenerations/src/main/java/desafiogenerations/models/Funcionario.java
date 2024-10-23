@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"email_funcionario"})})
+@Table(name="funcionarios", uniqueConstraints = {@UniqueConstraint(columnNames = {"email"})})
 @Getter
 @Setter
 @AllArgsConstructor
@@ -31,7 +31,7 @@ public class Funcionario implements UserDetails {
 
     @Email
     @Column(nullable = false)
-    private String email_funcionario;
+    private String email;
 
     @Column(nullable = false)
     private String senha;
@@ -41,7 +41,7 @@ public class Funcionario implements UserDetails {
 
     public Funcionario(FuncionarioRequestPayload payload){
         this.nome_funcionario = payload.nome();
-        this.email_funcionario = payload.email();
+        this.email = payload.email();
         this.senha = payload.senha();
         this.cargo = payload.cargo();
 
@@ -60,7 +60,7 @@ public class Funcionario implements UserDetails {
 
     @Override
     public String getUsername() {
-        return email_funcionario;
+        return email;
     }
 
     @Override

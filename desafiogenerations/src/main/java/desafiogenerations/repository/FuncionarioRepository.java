@@ -9,11 +9,11 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 @Repository
 public interface FuncionarioRepository extends JpaRepository <Funcionario, Long > {
-    @Query(
-            """
-            SELECT f FROM funcionarios f WHERE f.email_funcionario = :email
-            """
-    )
+//    @Query(
+//            """
+//            SELECT f FROM funcionarios f WHERE f.email_funcionario = :email
+//            """
+//    )
     UserDetails findByEmail(String email);
 
 }
