@@ -1,6 +1,7 @@
 package desafiogenerations.security;
 
 import desafiogenerations.repository.FuncionarioRepository;
+import desafiogenerations.security.TokenService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-// Anotação usada em componetes genéricos
+
 @Component
 public class SecurityFilter extends OncePerRequestFilter {
 
@@ -23,26 +24,38 @@ public class SecurityFilter extends OncePerRequestFilter {
     private FuncionarioRepository repository;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        var tokenJWT = recuperarToken(request);
+    protected void doFilterInternal (HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        var tokenJWT = recuperarToken ( request );
 
-        if(tokenJWT != null){
-            var subject = tokenService.getSubject(tokenJWT);
-            // Autenticar usuario para o Spring entender que teve login
-            var usuario = repository.findByEmail(subject);
+        if (tokenJWT != null) {
+            try {
+                var subject = tokenService.getSubject ( tokenJWT );
+                var usuario = repository.findByEmail ( subject );
 
-            var authentication = new UsernamePasswordAuthenticationToken(usuario,null,usuario.getAuthorities());
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+                if (usuario != null) {
+                    var authentication = new UsernamePasswordAuthenticationToken ( usuario, null, usuario.getAuthorities ( ) );
+                    SecurityContextHolder.getContext ( ).setAuthentication ( authentication );
+                } else{
+                    System.out.println ( "Usuário não encontrado: " + subject );
+                }
+            } catch (RuntimeException e) {
+                System.out.println ( "Erro na validação do token: " + e.getMessage ( ) );
+            }
+        } else{
+            System.out.println ( "Token JWT não encontrado no cabeçalho da requisição." );
         }
 
-        filterChain.doFilter(request, response); // Necessário para chamar o proximos filtros da requisição
+        filterChain.doFilter ( request, response );
     }
 
-    private String recuperarToken(HttpServletRequest request) {
-        var authorizationHeader = request.getHeader("Authorization");
-        if(authorizationHeader != null){
-            return authorizationHeader.replace("Bearer ", "");
+    private String recuperarToken (HttpServletRequest request) {
+        var authorizationHeader = request.getHeader ( "Authorization" );
+        if (authorizationHeader != null && authorizationHeader.startsWith ( "Bearer " )) {
+            String token = authorizationHeader.replace ( "Bearer ", "" );
+            System.out.println ( "Token recuperado: " + token );
+            return token;
         }
+        System.out.println ( "Token JWT não encontrado no cabeçalho da requisição." );
         return null;
     }
 }

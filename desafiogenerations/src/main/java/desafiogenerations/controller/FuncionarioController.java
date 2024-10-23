@@ -4,11 +4,11 @@ import desafiogenerations.models.Funcionario;
 import desafiogenerations.payload.FuncionarioCreateResponse;
 import desafiogenerations.payload.FuncionarioRequestPayload;
 import desafiogenerations.repository.FuncionarioRepository;
-import desafiogenerations.service.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,9 +19,6 @@ public class FuncionarioController {
 
     @Autowired
     private FuncionarioRepository repository;
-
-    @Autowired
-    private FuncionarioService funcionarioService;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -41,8 +38,10 @@ public class FuncionarioController {
     }
 
     @PostMapping("/criar")
-    public ResponseEntity<FuncionarioCreateResponse> createFuncionario(@RequestBody FuncionarioRequestPayload payload){
+    public ResponseEntity<FuncionarioCreateResponse> createFuncionario(@RequestBody FuncionarioRequestPayload payload, UriComponentsBuilder uriBuilder){
         Funcionario newFuncionario = new Funcionario(payload);
+
+        var uri = uriBuilder.path("/funcionarios/{id}").buildAndExpand(newFuncionario.getId_funcionario()).toUri();
 
         // Codifica a senha antes de salvar o funcionário
         String encodedPassword = passwordEncoder.encode(payload.senha());
@@ -50,7 +49,7 @@ public class FuncionarioController {
 
         try {
             this.repository.save(newFuncionario);
-            return ResponseEntity.ok(new FuncionarioCreateResponse(newFuncionario.getId_funcionario()));
+            return ResponseEntity.created(uri).body(new FuncionarioCreateResponse(newFuncionario.getId_funcionario()));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
