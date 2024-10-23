@@ -2,6 +2,7 @@ package desafiogenerations.controller;
 
 import desafiogenerations.models.Funcionario;
 import desafiogenerations.payload.FuncionarioCreateResponse;
+import desafiogenerations.payload.FuncionarioDTO;
 import desafiogenerations.payload.FuncionarioRequestPayload;
 import desafiogenerations.repository.FuncionarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/funcionarios")
@@ -24,17 +26,31 @@ public class FuncionarioController {
     private PasswordEncoder passwordEncoder;
 
     @GetMapping("/listar")
-    public List<Funcionario> findAll(){
+    public ResponseEntity<List<FuncionarioDTO>> findAll(){
 
-        return repository.findAll();
+        List<FuncionarioDTO> funcionarios = repository.findAll()
+                .stream()
+                .map(funcionario -> new FuncionarioDTO(
+                        funcionario.getId_funcionario(),
+                        funcionario.getNome_funcionario(),
+                        funcionario.getEmail()))
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(funcionarios);
 
     }
 
-    @GetMapping("/listar/{id}")
-    public ResponseEntity<Funcionario> getAluno(@PathVariable Long id){
-        Optional<Funcionario> aluno = this.repository.findById(id);
+    @GetMapping("listar/{id}")
+    public ResponseEntity<FuncionarioDTO> getFuncionario(@PathVariable Long id) {
+        Optional<Funcionario> funcionario = this.repository.findById(id);
 
-        return aluno.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        return funcionario.map(f -> ResponseEntity.ok(
+                        new FuncionarioDTO(
+                                f.getId_funcionario(),
+                                f.getNome_funcionario(),
+                                f.getEmail()
+                        )))
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping("/criar")
@@ -64,7 +80,11 @@ public class FuncionarioController {
 
             editadoFuncionario.setNome_funcionario(payload.nome());
             editadoFuncionario.setEmail(payload.email());
-            editadoFuncionario.setSenha(payload.senha());
+
+            // Codifica a senha antes de salvar o funcionário
+            String encodedPassword = passwordEncoder.encode(payload.senha());
+            editadoFuncionario.setSenha(encodedPassword);
+
             editadoFuncionario.setCargo(payload.cargo());
 
             this.repository.save(editadoFuncionario);

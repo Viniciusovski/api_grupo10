@@ -17,7 +17,7 @@ public class Aluno {
 
     @NotNull(message = "O nome não pode ser nulo")
     @NotBlank(message = "O nome deve ser preenchido")
-    @Column(nullable = true, unique = true, length = 512)
+    @Column(nullable = false, unique = false, length = 512)
     private String nome;
 
     @NotNull(message = "O email não pode ser nulo")
