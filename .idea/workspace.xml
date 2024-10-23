@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="model aluno">
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/exceptions/EmailJaCadastradoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Cauasebastian&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Viniciusovski/api_grupo10.git&quot;,
+    &quot;accountId&quot;: &quot;744aa64d-ec03-4da4-83a0-7ed351ce4389&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nlC1EtlvZcAqOZa0hbOpcrD8aI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DesafiogenerationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;caua&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cauas/Documents/GitHub/api_grupo10&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="desafiogenerations.models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DesafiogenerationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="desafiogenerations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="desafiogenerations.DesafiogenerationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="" />
+      <created>1729538058956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729538058956</updated>
+      <workItem from="1729538059997" duration="331000" />
+      <workItem from="1729620141978" duration="4223000" />
+      <workItem from="1729697574867" duration="601000" />
+      <workItem from="1729704350342" duration="85000" />
+      <workItem from="1729710813058" duration="313000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="model aluno" />
+    <option name="LAST_COMMIT_MESSAGE" value="model aluno" />
+  </component>
+</project>

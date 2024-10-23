@@ -1,14 +1,10 @@
 package desafiogenerations.models;
 
-
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.*;
 
 @Entity
-@Table(name="alunos")
+@Table(name = "alunos")
 public class Aluno {
 
     @Id
@@ -17,15 +13,15 @@ public class Aluno {
 
     @NotNull(message = "O nome não pode ser nulo")
     @NotBlank(message = "O nome deve ser preenchido")
-    @Column(nullable = true, unique = true, length = 512)
+    @Column(nullable = false, unique = true, length = 512)
     private String nome;
 
     @NotNull(message = "O email não pode ser nulo")
     @NotBlank(message = "O email deve ser preenchido")
+    @Email(message = "O email deve ser válido")
     @Column(nullable = false, unique = true, length = 512)
     private String email;
 
-    //Somente valores positivos
     @NotNull(message = "A idade não pode ser nula")
     @Min(value = 1, message = "A idade deve ser um valor positivo")
     @Column(nullable = false)
@@ -34,30 +30,32 @@ public class Aluno {
     @NotNull(message = "A nota do primeiro semestre não pode ser nula")
     @Min(value = 0, message = "A nota do primeiro semestre deve ser no mínimo 0")
     @Max(value = 10, message = "A nota do primeiro semestre deve ser no máximo 10")
+    @Column(nullable = false)
     private Double notaPrimeiroSemestre;
 
     @NotNull(message = "A nota do segundo semestre não pode ser nula")
     @Min(value = 0, message = "A nota do segundo semestre deve ser no mínimo 0")
     @Max(value = 10, message = "A nota do segundo semestre deve ser no máximo 10")
+    @Column(nullable = false)
     private Double notaSegundoSemestre;
 
-    public Double getMedia() {
-        if (notaPrimeiroSemestre != null && notaSegundoSemestre != null) {
-            return (notaPrimeiroSemestre + notaSegundoSemestre) / 2;
-        }
-        return null; // Retorna null se uma das notas for nula
-    }
-
-    //Relaçao com turma
-    @ManyToOne
+    // Relacionamento com a turma
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "turma_id")
     private Turma turma;
 
     private String nomeProfessor;
-
     private Integer numeroSala;
 
-    // getters and setters
+    // Método para calcular a média
+    public Double getMedia() {
+        if (notaPrimeiroSemestre != null && notaSegundoSemestre != null) {
+            return (notaPrimeiroSemestre + notaSegundoSemestre) / 2;
+        }
+        return null;
+    }
+
+    // Getters e Setters
     public Long getId() {
         return id;
     }
@@ -72,6 +70,14 @@ public class Aluno {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Integer getIdade() {
@@ -112,5 +118,13 @@ public class Aluno {
 
     public void setNumeroSala(Integer numeroSala) {
         this.numeroSala = numeroSala;
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 }
