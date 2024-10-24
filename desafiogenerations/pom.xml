@@ -137,21 +137,6 @@
 					</archive>
 				</configuration>
 			</plugin>
-
-			<!-- Plugin do Maven para gerar o JAR com Manifesto e Main-Class -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>desafiogenerations.DesafiogenerationsApplication</mainClass> <!-- Defina aqui sua classe principal -->
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-
-
 		</plugins>
 
 		<resources>
