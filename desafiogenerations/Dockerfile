@@ -1,4 +1,4 @@
-FROM openjdk:17.0.1-jdk-oracle as build
+FROM openjdk:21-jdk as build
 
 WORKDIR /workspace/app
 
@@ -9,18 +9,14 @@ COPY src src
 
 RUN chmod -R 777 ./mvnw
 
+# Build the application
 RUN ./mvnw install -DskipTests
 
-RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+FROM openjdk:21-slim
 
-FROM openjdk:17.0.1-jdk-oracle
+WORKDIR /app
 
-VOLUME /tmp
+# Copy the JAR file directly (simpler approach)
+COPY --from=build /workspace/app/target/*.jar app.jar
 
-ARG DEPENDENCY=/workspace/app/target/dependency
-
-COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
-COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
-COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
-
-ENTRYPOINT ["java","-cp","app:app/lib/*","desafiogenerations.DesafiogenerationsApplication"]
+ENTRYPOINT ["java","-jar","app.jar"]
