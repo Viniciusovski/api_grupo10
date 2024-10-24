@@ -5,58 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="model aluno">
-      <change afterPath="$PROJECT_DIR$/AWS10/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/controller/AlunoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/controller/TurmaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/models/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/models/Turma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/repository/AlunoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/repository/TurmaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/service/TurmaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS10/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AutenticacaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/FuncionarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/TurmaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioCreateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioRequestLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioRequestPayload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/FuncionarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/TurmaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/DadosTokenJWT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/SecurityConfigurations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AutenticacaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/TurmaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/UnitTests/AlunoControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/AlunoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/AlunoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +183,7 @@
       <workItem from="1729697574867" duration="601000" />
       <workItem from="1729704350342" duration="85000" />
       <workItem from="1729710813058" duration="313000" />
-      <workItem from="1729750063049" duration="2445000" />
+      <workItem from="1729750063049" duration="2754000" />
     </task>
     <servers />
   </component>

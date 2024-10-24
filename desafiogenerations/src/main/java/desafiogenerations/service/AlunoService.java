@@ -1,4 +1,3 @@
-// AlunoService.java
 package desafiogenerations.service;
 
 import desafiogenerations.exceptions.EmailJaCadastradoException;
@@ -20,13 +19,13 @@ public class AlunoService {
     public AlunoService(AlunoRepository alunoRepository) {
         this.alunoRepository = alunoRepository;
     }
-    //Find all students
+
+    @Cacheable("alunos")
     public List<Aluno> findAll() {
         return alunoRepository.findAll();
     }
 
-
-
+    @CacheEvict(value = "alunos", allEntries = true)
     public Aluno create(Aluno aluno) {
         try {
             alunoRepository.save(aluno);
@@ -36,14 +35,10 @@ public class AlunoService {
         }
     }
 
-    @Cacheable("alunos")
-    public List<Aluno> list() {
-        return alunoRepository.findAll();
-    }
-
-    @CachePut("alunos")
+    @CachePut(value = "alunos", key = "#id")
     public Aluno update(Long id, Aluno aluno) {
-        Aluno alunoToUpdate = alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
+        Aluno alunoToUpdate = alunoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
         alunoToUpdate.setNome(aluno.getNome());
         alunoToUpdate.setEmail(aluno.getEmail());
         alunoToUpdate.setIdade(aluno.getIdade());
@@ -51,14 +46,16 @@ public class AlunoService {
         return alunoToUpdate;
     }
 
-    @CacheEvict(value = "alunos", allEntries = true)
-    public Aluno delete(Long id) {
-        Aluno alunoToDelete = alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
+    @CacheEvict(value = "alunos", key = "#id")
+    public void delete(Long id) {
+        Aluno alunoToDelete = alunoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
         alunoRepository.deleteById(id);
-        return alunoToDelete;
     }
-    @Cacheable("alunos")
+
+    @Cacheable(value = "alunos", key = "#id")
     public Aluno findById(Long id) {
-        return alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
+        return alunoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
     }
 }
