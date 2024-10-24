@@ -1,5 +1,6 @@
 package desafiogenerations.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 
@@ -11,21 +12,22 @@ public class Turma {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long turma_id;
 
     private String nome;
     private String instrutor;
 
     @OneToMany(mappedBy = "turma", cascade = CascadeType.ALL)  // 'turma' refere-se ao campo em 'Aluno'
+    @JsonIgnoreProperties("turma")
     private List<Aluno> alunos;
 
     // Getters e Setters
     public Long getId() {
-        return id;
+        return turma_id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.turma_id = id;
     }
 
     public String getNome() {

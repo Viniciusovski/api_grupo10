@@ -1,6 +1,7 @@
 package desafiogenerations.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -69,8 +70,9 @@ public class Aluno {
     }
 
     //Relaçao com turma
-    @ManyToOne
-    @JoinColumn(name = "turma_id")
+    @ManyToOne(fetch = FetchType.LAZY)  // Define o tipo de carregamento como LAZY
+    @JoinColumn(name = "turma_id")  // Especifica o nome da coluna que fará o join na tabela "turma"
+    @JsonIgnoreProperties("alunos")
     private Turma turma;
 
     private String nomeProfessor;
