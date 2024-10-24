@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="model aluno">
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Cauasebastian&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Viniciusovski/api_grupo10.git&quot;,
+    &quot;accountId&quot;: &quot;744aa64d-ec03-4da4-83a0-7ed351ce4389&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nlC1EtlvZcAqOZa0hbOpcrD8aI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.desafiogenerations/compose.yaml: Compose Deployment.executor": "Run",
+    "JUnit.AlunoControllerTest.executor": "Run",
+    "JUnit.AlunoControllerTest.testDeleteAluno.executor": "Run",
+    "JUnit.AlunoControllerTest.testListAlunos.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DesafiogenerationsApplication.executor": "Run",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cauas/Documents/GitHub/api_grupo10",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="desafiogenerations.models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DesafiogenerationsApplication">
+    <configuration name="AlunoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlunoControllerTest.testDeleteAluno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="METHOD_NAME" value="testDeleteAluno" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlunoControllerTest.testListAlunos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="METHOD_NAME" value="testListAlunos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesafiogenerationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="desafiogenerations" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="desafiogenerations.DesafiogenerationsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="desafiogenerations/compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="desafiogenerations/compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.desafiogenerations/compose.yaml: Compose Deployment" />
+        <item itemvalue="JUnit.AlunoControllerTest" />
+        <item itemvalue="JUnit.AlunoControllerTest.testListAlunos" />
+        <item itemvalue="JUnit.AlunoControllerTest.testDeleteAluno" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="" />
+      <created>1729538058956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729538058956</updated>
+      <workItem from="1729538059997" duration="331000" />
+      <workItem from="1729620141978" duration="4223000" />
+      <workItem from="1729697574867" duration="601000" />
+      <workItem from="1729704350342" duration="85000" />
+      <workItem from="1729710813058" duration="313000" />
+      <workItem from="1729750063049" duration="2754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="model aluno" />
+    <option name="LAST_COMMIT_MESSAGE" value="model aluno" />
+  </component>
+</project>
