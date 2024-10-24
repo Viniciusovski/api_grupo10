@@ -5,11 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f540f420-26dd-44fa-9946-3a79de7f7844" name="Changes" comment="model aluno">
-      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/exceptions/EmailJaCadastradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/controller/AlunoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/controller/TurmaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/models/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/models/Turma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/repository/AlunoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/repository/TurmaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/java/desafiogenerations/service/TurmaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AWS10/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AutenticacaoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/FuncionarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/TurmaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioCreateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioRequestLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/payload/FuncionarioRequestPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/FuncionarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/TurmaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/DadosTokenJWT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/SecurityConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/security/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AutenticacaoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/TurmaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/UnitTests/AlunoControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/DesafiogenerationsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/controller/AlunoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/models/Turma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/AlunoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/repository/AlunoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/java/desafiogenerations/service/AlunoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/desafiogenerations/src/test/java/desafiogenerations/DesafiogenerationsApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +86,10 @@
     &quot;accountId&quot;: &quot;744aa64d-ec03-4da4-83a0-7ed351ce4389&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,31 +103,87 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DesafiogenerationsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;caua&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cauas/Documents/GitHub/api_grupo10&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.desafiogenerations/compose.yaml: Compose Deployment.executor": "Run",
+    "JUnit.AlunoControllerTest.executor": "Run",
+    "JUnit.AlunoControllerTest.testDeleteAluno.executor": "Run",
+    "JUnit.AlunoControllerTest.testListAlunos.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DesafiogenerationsApplication.executor": "Run",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cauas/Documents/GitHub/api_grupo10",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="desafiogenerations.models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DesafiogenerationsApplication">
+    <configuration name="AlunoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlunoControllerTest.testDeleteAluno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="METHOD_NAME" value="testDeleteAluno" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlunoControllerTest.testListAlunos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafiogenerations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="desafiogenerations.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="desafiogenerations.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="desafiogenerations.UnitTests.AlunoControllerTest" />
+      <option name="METHOD_NAME" value="testListAlunos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesafiogenerationsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="desafiogenerations" />
@@ -84,6 +192,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="desafiogenerations/compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="desafiogenerations/compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.desafiogenerations/compose.yaml: Compose Deployment" />
+        <item itemvalue="JUnit.AlunoControllerTest" />
+        <item itemvalue="JUnit.AlunoControllerTest.testListAlunos" />
+        <item itemvalue="JUnit.AlunoControllerTest.testDeleteAluno" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -106,6 +234,7 @@
       <workItem from="1729697574867" duration="601000" />
       <workItem from="1729704350342" duration="85000" />
       <workItem from="1729710813058" duration="313000" />
+      <workItem from="1729750063049" duration="2445000" />
     </task>
     <servers />
   </component>
@@ -113,6 +242,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="model aluno" />
     <option name="LAST_COMMIT_MESSAGE" value="model aluno" />
   </component>

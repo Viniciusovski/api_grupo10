@@ -1,3 +1,4 @@
+// AlunoService.java
 package desafiogenerations.service;
 
 import desafiogenerations.exceptions.EmailJaCadastradoException;
@@ -19,6 +20,12 @@ public class AlunoService {
     public AlunoService(AlunoRepository alunoRepository) {
         this.alunoRepository = alunoRepository;
     }
+    //Find all students
+    public List<Aluno> findAll() {
+        return alunoRepository.findAll();
+    }
+
+
 
     public Aluno create(Aluno aluno) {
         try {
@@ -49,5 +56,9 @@ public class AlunoService {
         Aluno alunoToDelete = alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
         alunoRepository.deleteById(id);
         return alunoToDelete;
+    }
+    @Cacheable("alunos")
+    public Aluno findById(Long id) {
+        return alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
     }
 }

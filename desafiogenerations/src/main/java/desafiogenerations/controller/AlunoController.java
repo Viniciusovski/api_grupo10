@@ -2,6 +2,7 @@ package desafiogenerations.controller;
 
 import desafiogenerations.models.Aluno;
 import desafiogenerations.service.AlunoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
@@ -38,7 +39,7 @@ public class AlunoController {
 
     @GetMapping
     public ResponseEntity<List<EntityModel<Aluno>>> list() {
-        List<EntityModel<Aluno>> alunos = alunoService.list().stream()
+        List<EntityModel<Aluno>> alunos = alunoService.findAll().stream()
                 .map(aluno -> {
                     EntityModel<Aluno> alunoModel = EntityModel.of(aluno);
                     alunoModel.add(linkTo(methodOn(AlunoController.class).update(aluno.getId(), aluno)).withRel("update"));
@@ -47,6 +48,17 @@ public class AlunoController {
                 }).collect(Collectors.toList());
 
         return ResponseEntity.ok(alunos);
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<EntityModel<Aluno>> findById(@PathVariable Long id) {
+        Aluno aluno = alunoService.findById(id);
+
+        EntityModel<Aluno> alunoModel = EntityModel.of(aluno);
+        alunoModel.add(linkTo(methodOn(AlunoController.class).list()).withRel("alunos"));
+        alunoModel.add(linkTo(methodOn(AlunoController.class).update(aluno.getId(), aluno)).withRel("update"));
+        alunoModel.add(linkTo(methodOn(AlunoController.class).delete(aluno.getId())).withRel("delete"));
+
+        return ResponseEntity.ok(alunoModel);
     }
 
     @PutMapping("/{id}")
