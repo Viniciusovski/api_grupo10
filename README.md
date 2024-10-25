@@ -61,7 +61,3 @@ A documentação da API, construída com Swagger, permite explorar e testar endp
    ```bash
     docker-compose up -d
    ```
-4. **Acessando a Aplicação:**
-
-A aplicação estará disponível em http://localhost:8080
-Acesse a documentação do Swagger em http://localhost:8080/swagger-ui/index.html#/
